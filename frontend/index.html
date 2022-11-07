@@ -6,56 +6,24 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./img/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 </head>
 
 <body>
-    <video id="my-video" class="video" autoplay muted loop>
-        <source src="./img/Tierra.mp4" type="video/mp4">
-     </video> 
-     <div class="contenedor_login">
-        <img src="img/logo2.png"/>
-        <div class="login" id="dos">
-        <form id="loginContainer" action="/login" method="post">
-            <h2 class="iniciars">Iniciar Sesión</h2>
-            <input type="email" placeholder="Email" name="email" required id="email">
-            <input type="password" placeholder="Contraseña" name="password" required id="password">
-            <input type="submit" value="Iniciar Sesión" id="buttonis">
-        </form>
-        <div class="reset-password">
-            <a onclick="mostrar()">Olvide mi Contraseña</a>
+     <div class="contenedor">
+        <img id="img-fondo" src="img/fondo-galaxy.jpg"/>
+        <img id="img-logo" src="img/logo3.png">
+        <h1 class="titulo">ORCUS</h2>
+        <h3 class="text">text a <br>definir</h2>
+        <a href="" class="rectangulo-text1A">Jugar</a>
+        <a href="" class="rectangulo-text1A">Instalar</a>
+        <a href="" class="rectangulo-text1A">Iniciar Sesión</a>
+     </div>
+     <footer class="pie">
+        <div class="contenedor_pie">
+            <h5 class="pie-text">© ALL RIGHT RESERVED.<br>DESIGNED &amp; DEVELOPED BY ORCUS</h5>
         </div>
-    </div>
-        <div class="resetPassword" id="uno">
-          <form  id="formReset" action="/PasswordReset" method="post">
-            <h1 class="resetText">Restablecer la contraseña</h1>
-            <input type="email" placeholder="Ingrese su email" name="emailR" required id="emailR">
-            <input type="submit" value="Enviar Email" id="enviar" class="enviarEmail" onclick="cambiar()">
-            <a class="x" onclick="ocultar()">❌</a>
-          </form>
-        </div>
-        <div class="resetPassword-enviado" id="tres">
-            <p class="resetmensaje">Email enviado con exito. Ya le enviamos un email con su usuario y contraseña. Recuerde revisar Spam</p>
-            <a class="x" onclick="ocultar()">❌</a>
-        </div>
-    </div>
-    <script>
-        function mostrar(){
-            document.getElementById('uno').style.display = 'block';
-            document.getElementById('dos').style.display = 'none'; 
-            document.getElementById('tres').style.display = 'none';
-        }
-        function ocultar(){
-            document.getElementById('uno').style.display = 'none';
-            document.getElementById('dos').style.display = 'block'; 
-            document.getElementById('tres').style.display = 'none';
-        }
-        function cambiar(){
-            document.getElementById('uno').style.display = 'none';
-            document.getElementById('dos').style.display = 'none'; 
-            document.getElementById('tres').style.display = 'block';
-        }
-    </script>
+    </footer>
 </body>
 </html>

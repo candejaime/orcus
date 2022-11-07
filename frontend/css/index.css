@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: #292D4F;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.img-fondo {
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    left: 10%;
+    top: 15%;
+    border-radius: 89px;
+}
+.img-logo {
+    position: absolute;
+    width: 20%;
+    height: 12%;
+    left: 50%;
+    top: 10%;
+}
