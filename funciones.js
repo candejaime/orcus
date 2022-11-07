@@ -10,7 +10,7 @@ exports.login = async function(req, res, email, password) {
     if (usuario.rowCount != 0) {
         req.session.loggedin = true;
         req.session.username = usuario.rows[0].email_admi;
-        res.redirect('/homeadmi');
+        res.redirect('/');
     } else {
         errorLogin = true;
     }
