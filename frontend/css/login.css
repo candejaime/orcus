@@ -3,14 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-#video_background {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+.video {
+    position: fixed;
+    top: 30%; left: 50%;
+    z-index: 1;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1000;
-    overflow: hidden;
-}
+    transform: translate(-50%, -50%);
+  }
