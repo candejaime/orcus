@@ -13,3 +13,187 @@
     height: auto;
     transform: translate(-50%, -50%);
   }
+
+  .contenedor_login {
+    max-width: 480px;
+    max-height: 500px;
+    position: absolute;
+    width: 48%;
+    height: 76%;
+    left: 35%;
+    top: 9%;
+    background: rgba(10, 9, 10, 0.94);
+    border-radius: 6%;
+}
+
+.contenedor_login img {
+    position: absolute;
+    width: 36%;
+    height: 33.5%;
+    left: 33%;
+    top: -2.5%;
+}
+
+.contenedor_login h2 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 34%;
+    left: 35%;
+    font-size: 2vw;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.contenedor_login input[type="password"] {
+    position: absolute;
+    outline: none;
+    background: rgba(0, 0, 0, .5);
+    display: block;
+    width: 90%;
+    padding: 3% 3%;
+    color: #fff;
+    border: none;
+    border-radius: 2%;
+    border-bottom: 4% solid #fff;
+    font-family: Roboto;
+    font-size: 1vw;
+    font-weight: normal;
+    margin: 20 0 10 0;
+    top: 56%;
+    left: 5%;
+    transition: all .5s ease;
+}
+
+.contenedor_login input[type="email"] {
+    position: absolute;
+    outline: none;
+    background: rgba(0, 0, 0, .5);
+    display: block;
+    width: 90%;
+    padding: 3% 3%;
+    color: #fff;
+    border: none;
+    border-radius: 2;
+    border-bottom: 4 solid #fff;
+    font-family: Roboto;
+    font-size: 1vw;
+    font-weight: normal;
+    margin: 2 0 1 0;
+    top: 42%;
+    left: 5%;
+    transition: all .5s ease;
+}
+
+.contenedor_login input[type="password"]:focus,
+.contenedor_login input[type="email"]:focus {
+    border-bottom: 4px solid #481056;
+}
+
+.contenedor_login input[type="submit"] {
+    position: absolute;
+    width: 50%;
+    margin: 0 0 2% 0;
+    border: solid thin #481056;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    font-weight: 60%;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 90%;
+    font-size: 1vw;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    top: 78%;
+    left: 25%;
+}
+
+.contenedor_login input[type="submit"]:hover {
+    background: #481056;
+}
+
+.contenedor_login .reset-password a {
+    position: absolute;
+    padding: 0 0;
+    top: 94%;
+    left: 60%;
+    width: 60%;
+    height: 5%;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.resetPassword{
+position: absolute;
+width: 65%;
+height: 50%;
+left: 20%;
+top: 30%;
+display: none;
+}
+.resetPassword .resetText{
+position: absolute;
+left: 10%;
+top: 10%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 100%;
+font-size: 1.5vw;
+line-height: 33px;
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+color: #FFFFFF;
+}
+.resetPassword #emailR{
+position: absolute;
+width: 95%;
+height: 15%;
+left: 2%;
+top: 45%;
+
+}
+.resetPassword #envia{
+position: absolute;
+left: 13%;
+top: 50%;
+}
+.x{
+position: absolute;
+left: 90%;
+top: 1%;
+background-color: #000000;
+}
+
+.resetPassword-enviado{
+position: absolute;
+width: 65%;
+height: 20%;
+left: 20%;
+top: 30%;
+display: none;
+}
+.resetmensaje{
+position: absolute;
+width: 120%;
+left: -10%;
+top: 70%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 100%;
+font-size: 1vw;
+line-height: 120%;
+display: flex;
+align-items: center;
+letter-spacing: -0.015em;
+color: #FFFFFF;
+}
