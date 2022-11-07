@@ -30,13 +30,13 @@ app.get('/login', (req, res) => {
 
 //LOGIN
 app.post("/login", (req, res) => {
-    /*const userData = req.body;
+    const userData = req.body;
     email = userData.email;
     if (userData.email && userData.password) {
         req.session.loggedin, req.session.username, errorLogin = funciones.login(req, res, userData.email, userData.password);
     } else {
 
-    }*/
+    }
 });
 
 app.listen(PORT, () => {
