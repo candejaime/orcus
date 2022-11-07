@@ -22,10 +22,42 @@ body {
     top: 15%;
     border-radius: 89px;
 }
+
 .img-logo {
     position: absolute;
     width: 20%;
     height: 12%;
     left: 50%;
     top: 10%;
+}
+
+a {
+    position: absolute;
+    text-decoration: none;
+    width: 42.1%;
+    height: 22.3%;
+    font-family: 'Zen Tokyo Zoo';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 3.2vw;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button-1{
+    top: 80%;
+    left: 50%;
+}
+
+.button-2{
+    top: 30%;
+    left: 50%;
+}
+
+.button-3{
+    top: 2%;
+    left: 80%;
 }

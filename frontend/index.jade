@@ -5,44 +5,24 @@ html
     meta(charset='UTF-8')
     link(rel='shortcut icon' href='./img/favicon.png')
     meta(name='viewport' content='width=device-width, initial-scale=1.0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
-    link(rel='stylesheet' href='css/login.css')
+    link(rel='stylesheet' href='css/index.css')
     link#u-theme-google-font(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i')
   body
-    video#my-video.video(autoplay='' muted='' loop='')
-      source(src='./img/Tierra.mp4' type='video/mp4')
-    .contenedor_login
-      img(src='img/logo2.png')
-      #dos.login
-        form#loginContainer(action='/login' method='post')
-          h2.iniciars Iniciar Sesión
-          input#email(type='email' placeholder='Email' name='email' required='')
-          input#password(type='password' placeholder='Contraseña' name='password' required='')
-          input#buttonis(type='submit' value='Iniciar Sesión')
-        .reset-password
-          a(onclick='mostrar()') Olvide mi Contraseña
-      #uno.resetPassword
-        form#formReset(action='/PasswordReset' method='post')
-          h1.resetText Restablecer la contraseña
-          input#emailR(type='email' placeholder='Ingrese su email' name='emailR' required='')
-          input#enviar.enviarEmail(type='submit' value='Enviar Email' onclick='cambiar()')
-          a.x(onclick='ocultar()') ❌
-      #tres.resetPassword-enviado
-        p.resetmensaje
-          | Email enviado con exito. Ya le enviamos un email con su usuario y contraseña. Recuerde revisar Spam
-        a.x(onclick='ocultar()') ❌
-    script.
-      function mostrar(){
-      document.getElementById('uno').style.display = 'block';
-      document.getElementById('dos').style.display = 'none';
-      document.getElementById('tres').style.display = 'none';
-      }
-      function ocultar(){
-      document.getElementById('uno').style.display = 'none';
-      document.getElementById('dos').style.display = 'block';
-      document.getElementById('tres').style.display = 'none';
-      }
-      function cambiar(){
-      document.getElementById('uno').style.display = 'none';
-      document.getElementById('dos').style.display = 'none';
-      document.getElementById('tres').style.display = 'block';
-      }
+    .contenedor
+      img#img-fondo(src='img/fondo-galaxy.jpg')
+      img#img-logo(src='img/logo3.png')
+      h1.titulo ORCUS
+      h3.text
+        | texto a 
+        br
+        | definir
+      a.rectangulo-text1A(href='') Jugar
+      a.rectangulo-text1A(href='') Instalar
+      a.rectangulo-text1A(href='') Iniciar Sesión
+    footer.pie
+      .contenedor_pie
+        h5.pie-text
+          | © ALL RIGHT RESERVED.
+          br
+          | DESIGNED & DEVELOPED BY ORCUS
+
