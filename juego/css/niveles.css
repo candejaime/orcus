@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292D4F;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.absolute {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.575);
+}
+
+.ico {
+    position: absolute;
+    width: 3.3%;
+    height: 7%;
+    left: 2%;
+    top: 2%;
+    z-index: 100;
+}
+
+.log {
+    position: absolute;
+    width: 13%;
+    height: 4%;
+    left: 85%;
+    top: 2.5%;
+    z-index: 100;
+}
+
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0%;
+    top: 10%;
+}
+
+.uno {
+    position: absolute;
+    width: 104.41px;
+    height: 100px;
+    left: 92px;
+    top: 807px;
+}
+
+.dos {
+    position: absolute;
+    width: 80px;
+    height: 81.19px;
+    left: 372px;
+    top: 826px;
+}
+
+.tres {
+    position: absolute;
+    width: 81.25px;
+    height: 80px;
+    left: 532px;
+    top: 692px;
+}
+
+.cuatro {
+    position: absolute;
+    width: 81.18px;
+    height: 80px;
+    left: 748px;
+    top: 827px;
+}
+
+.cinco {
+    position: absolute;
+    width: 80px;
+    height: 82.58px;
+    left: 853px;
+    top: 641px;
+}
+
+.seis {
+    position: absolute;
+    width: 80px;
+    height: 81.19px;
+    left: 679px;
+    top: 553px;
+}
+
+.siete {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 448px;
+    top: 531px;
+}
+
+.ocho {
+    position: absolute;
+    width: 82.5px;
+    height: 80px;
+    left: 289px;
+    top: 652px;
+}
+
+.nueve {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 94px;
+    top: 512px;
+}
+
+.diez {
+    position: absolute;
+    width: 80px;
+    height: 92.57px;
+    left: 250px;
+    top: 367px;
+}
+
+.once {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 134px;
+    top: 218px;
+}
+
+.doce {
+    position: absolute;
+    width: 101.41px;
+    height: 80px;
+    left: 412px;
+    top: 258px;
+}
+
+.trece {
+    position: absolute;
+    width: 80px;
+    height: 82.42px;
+    left: 673px;
+    top: 363px;
+}
+
+.catorse {
+    position: absolute;
+    width: 80.53px;
+    height: 80px;
+    left: 908px;
+    top: 445px;
+}
+
+.quince {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 1063px;
+    top: 628px;
+}
+
+.dieciseis {
+    position: absolute;
+    width: 80px;
+    height: 82.5px;
+    left: 1163px;
+    top: 821px;
+}
+
+.diesisiete {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 1281px;
+    top: 662px;
+}
+
+.dieciocho {
+    position: absolute;
+    width: 80px;
+    height: 81.19px;
+    left: 1241px;
+    top: 445px;
+}
+
+.diecinueve {
+    position: absolute;
+    width: 82.5px;
+    height: 80px;
+    left: 1272px;
+    top: 210px;
+}
+
+.veinte {
+    position: absolute;
+    width: 81.21px;
+    height: 80px;
+    left: 1091px;
+    top: 393px;
+}
+
+.veintiuno {
+    position: absolute;
+    width: 80px;
+    height: 82.71px;
+    left: 962px;
+    top: 207px;
+}
+
+.veintedos {
+    position: absolute;
+    width: 194px;
+    height: 110px;
+    left: 622px;
+    top: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        display: none;
+    }
+}
