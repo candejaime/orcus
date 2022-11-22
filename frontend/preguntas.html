@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORCUS</title>
+    <link rel="shortcut icon" href="./img/logo-iconos/3.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Glitch' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="absolute">
+        <a href="/niveles.html"><img src="./img/logo-iconos/9.png" alt="" class="ico"></a>
+        <a href="/index.html"></a><img src="./img/logo-iconos/1.png" alt="" class="log"></a>
+    </div>
+    <h1 class="nivel">PREGUNTAS</h1>
+    <div class="body2">
+        <div class="containerr">
+            <span class="txt anim-text-flow">OBJETIVO: Contestar Correctamente 5 preguntas</span>
+        </div>
+    </div>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
+        * {
+            transition: all 0.3s;
+        }
+        
+        body {
+            background: powderblue;
+            background-image: url(./css/1.jpg);
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            font-family: calibri;
+            font-size: 120%;
+        }
+        
+        .nivel {
+            position: absolute;
+            width: 559px;
+            height: 156px;
+            font-family: 'Rubik Glitch';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 161px;
+            color: #FFFFFF;
+            top: -85px;
+            left: 410px;
+        }
+        
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.575);
+            z-index: -10;
+        }
+        
+        .ico {
+            position: absolute;
+            width: 3.5%;
+            height: 7%;
+            left: 2%;
+            top: 2%;
+            z-index: 100;
+        }
+        
+        .log {
+            position: absolute;
+            width: 13%;
+            height: 4%;
+            left: 85%;
+            top: 2.5%;
+            z-index: 100;
+        }
+        
+        .body2 {
+            background-color: #1a1a1a;
+            color: #fefefe;
+            font-family: 'Ubuntu';
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 0.9em;
+            line-height: 2;
+            font-weight: 300;
+            text-rendering: optimizeLegibility;
+            text-align: center;
+        }
+        
+        .containerr {
+            position: absolute;
+            top: 94%;
+            left: 13%;
+            width: 30%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .txt {
+            display: block;
+        }
+        
+        .contenedor {
+            width: 98vw;
+            height: 97vh;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .encabezado {
+            position: relative;
+            background: white;
+            min-width: 300px;
+            width: 70%;
+            max-width: 600px;
+            padding: 10px;
+        }
+        
+        .categoria {
+            opacity: 0.3;
+            text-align: left;
+        }
+        
+        .pregunta {
+            padding: 10px;
+        }
+        
+        .imagen {
+            object-fit: cover;
+            height: 0px;
+            width: 0px;
+        }
+        
+        .btn {
+            background: white;
+            width: 60%;
+            max-width: 550px;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .numero {
+            position: absolute;
+            opacity: 0.3;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .puntaje {
+            padding: 10px;
+            color: white;
+        }
+    </style>
+
+    <div class="contenedor">
+        <div class="puntaje" id="puntaje"></div>
+        <div class="encabezado">
+            <div class="categoria" id="categoria">
+            </div>
+            <div class="numero" id="numero"></div>
+            <div class="pregunta" id="pregunta">
+            </div>
+            <img src="#" class="imagen" id="imagen">
+        </div>
+        <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
+        <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+        <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+        <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+
+        <script src="js/preguntas.js"></script>
+    </div>
+
+</body>
+
+</html>

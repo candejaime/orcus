@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORCUS</title>
+    <link rel="shortcut icon" href="./img/logo-iconos/3.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Glitch' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="absolute">
+        <a href="/niveles.html"><img src="./img/logo-iconos/9.png" alt="" class="ico"></a>
+        <a href="/index.html"></a><img src="./img/logo-iconos/1.png" alt="" class="log"></a>
+    </div>
+    <h1 class="nivel">MEMORIA</h1>
+    <style>
+         :root {
+            --w: calc(70vw / 6);
+            --h: calc(70vh / 4);
+        }
+        
+        * {
+            transition: all 0.5s;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            -webkit-perspective: 1000;
+            background: powderblue;
+            background-image: url(./css/1.jpg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: calibri;
+        }
+        
+        .nivel {
+            position: absolute;
+            width: 559px;
+            height: 156px;
+            font-family: 'Rubik Glitch';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 161px;
+            color: #FFFFFF;
+            top: 448px;
+            left: 410px;
+        }
+        
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.575);
+        }
+        
+        .ico {
+            position: absolute;
+            width: 3.5%;
+            height: 7%;
+            left: 2%;
+            top: 2%;
+            z-index: 100;
+        }
+        
+        .log {
+            position: absolute;
+            width: 13%;
+            height: 4%;
+            left: 85%;
+            top: 2.5%;
+            z-index: 100;
+        }
+        
+        div {
+            display: inline-block;
+        }
+        
+        .area-tarjeta,
+        .tarjeta,
+        .cara {
+            cursor: pointer;
+            width: var(--w);
+            min-width: 100px;
+            height: var(--h);
+        }
+        
+        .tarjeta {
+            position: relative;
+            transform-style: preserve-3d;
+            animation: iniciar 5s;
+        }
+        
+        .cara {
+            position: absolute;
+            backface-visibility: hidden;
+            box-shadow: inset 0 0 0 5px white;
+            font-size: 500%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .trasera {
+            background-color: lightcyan;
+            transform: rotateY(180deg);
+        }
+        
+        .superior {
+            background: linear-gradient(rgb(68, 54, 139), rgb(89, 94, 165));
+        }
+        
+        .nuevo-juego {
+            cursor: pointer;
+            background: linear-gradient(rgb(68, 54, 139), rgb(89, 94, 165));
+            padding: 20px;
+            border-radius: 50px;
+            border: white 5px solid;
+            font-size: 130%;
+        }
+        
+        @keyframes iniciar {
+            20%,
+            90% {
+                transform: rotateY(180deg);
+            }
+            0%,
+            100% {
+                transform: rotateY(0deg);
+            }
+        }
+    </style>
+
+    <div id="tablero">
+    </div>
+
+    <br>
+
+    <script>
+        let x = 0;
+        let iconos = []
+        let selecciones = []
+
+        generarTablero()
+
+        function cargarIconos() {
+            iconos = [
+                '<i class="fas fa-thin fa-hat-wizard"></i>',
+                '<i class="fas fa-thin fa-dragon"></i>',
+                '<i class="fas fa-thin fa-ghost"></i>',
+                '<i class="fas fa-star-and-crescent"></i>',
+                '<i class="fas fa-solid fa-seedling"></i>',
+                '<i class="fab fa-galactic-republic" img=(./img/logo-iconos/15.png)></i>',
+                '<i class="fas fa-sun" img=(./img/logo-iconos/16.png)></i>',
+                '<i class="fas fa-solid fa-fish"></i>',
+                '<i class="fas fa-solid fa-eye"></i>',
+                '<i class="fas fa-solid fa-palette"></i>',
+                '<i class="fas fa-solid fa-lemon"></i>',
+                '<i class="fas fa-solid fa-skull-crossbones"></i>',
+            ]
+        }
+
+        function generarTablero() {
+            cargarIconos()
+            selecciones = []
+            let tablero = document.getElementById("tablero")
+            let tarjetas = []
+            for (let i = 0; i < 24; i++) {
+                tarjetas.push(`
+                <div class="area-tarjeta" onclick="seleccionarTarjeta(${i})">
+                    <div class="tarjeta" id="tarjeta${i}">
+                        <div class="cara trasera" id="trasera${i}">
+                            ${iconos[0]}
+                        </div>
+                        <div class="cara superior">
+                            <i class="fa-sharp fa-solid fa-question"></i>
+                        </div>
+                    </div>
+                </div>        
+                `)
+                if (i % 2 == 1) {
+                    iconos.splice(0, 1)
+                }
+            }
+            tarjetas.sort(() => Math.random() - 0.5)
+            tablero.innerHTML = tarjetas.join(" ")
+        }
+
+        function seleccionarTarjeta(i) {
+            let tarjeta = document.getElementById("tarjeta" + i)
+            if (tarjeta.style.transform != "rotateY(180deg)") {
+                tarjeta.style.transform = "rotateY(180deg)"
+                selecciones.push(i)
+            }
+            if (selecciones.length == 2) {
+                deseleccionar(selecciones)
+                selecciones = []
+            }
+        }
+
+        function deseleccionar(selecciones) {
+            setTimeout(() => {
+                let trasera1 = document.getElementById("trasera" + selecciones[0])
+                let trasera2 = document.getElementById("trasera" + selecciones[1])
+                if (trasera1.innerHTML != trasera2.innerHTML) {
+                    let tarjeta1 = document.getElementById("tarjeta" + selecciones[0])
+                    let tarjeta2 = document.getElementById("tarjeta" + selecciones[1])
+                    tarjeta1.style.transform = "rotateY(0deg)"
+                    tarjeta2.style.transform = "rotateY(0deg)"
+                } else {
+                    x = x + 1
+                    if (x === 12) {
+                        console.log(x)
+                        window.location.href = "http://localhost:3000/gano2.html";
+                    }
+                    trasera1.style.background = "plum"
+                    trasera2.style.background = "plum"
+                }
+            }, 1000);
+        }
+    </script>
+
+</body>
+
+</html>

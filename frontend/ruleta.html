@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORCUS</title>
+    <link rel="shortcut icon" href="./img/logo-iconos/3.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Rubik Glitch' rel='stylesheet'>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/Winwheel.min.js"></script>
+</head>
+
+<body>
+    <input type="button" value="Girar" onclick="miRuleta.startAnimation();" class="boton" />
+    <br /><br />
+    <canvas id="canvas" height="400" width="400"></canvas>
+    <script src="js/functions.js"></script>
+    <div class="overlay"></div>
+    <div class="absolute">
+        <a href="/niveles.html"><img src="./img/logo-iconos/9.png" alt="" class="ico"></a>
+        <a href="/index.html"></a><img src="./img/logo-iconos/1.png" alt="" class="log"></a>
+    </div>
+    <h1 class="nivel">RULETA</h1>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            -webkit-perspective: 1000;
+            background: powderblue;
+            background-image: url(./css/1.jpg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: calibri;
+        }
+        
+        .nivel {
+            position: absolute;
+            width: 559px;
+            height: 156px;
+            font-family: 'Rubik Glitch';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 161px;
+            color: #FFFFFF;
+            top: 448px;
+            left: 410px;
+        }
+        
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.575);
+            z-index: -1;
+        }
+        
+        .ico {
+            position: absolute;
+            width: 3.5%;
+            height: 7%;
+            left: 2%;
+            top: 2%;
+            z-index: 100;
+        }
+        
+        .log {
+            position: absolute;
+            width: 13%;
+            height: 4%;
+            left: 85%;
+            top: 2.5%;
+            z-index: 100;
+        }
+        
+        .boton {
+            position: absolute;
+            top: 75px;
+            z-index: 200;
+            color: #0099CC;
+            background: transparent;
+            border: 2px solid #0099CC;
+            border-radius: 6px;
+            border: none;
+            color: white;
+            padding: 12px 28px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        .boton {
+            background-color: rgb(1, 1, 1);
+            color: rgb(255, 255, 255);
+            border: 2px solid #052029;
+        }
+        
+        .boton:hover {
+            background-color: #052029;
+            color: white;
+        }
+    </style>
+
+</body>
+
+</html>

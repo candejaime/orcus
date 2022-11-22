@@ -1,5 +1,4 @@
 const express = require("express");
-const session = require("express-session");
 const cors = require("cors");
 const path = require("path");
 
@@ -13,30 +12,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'frontend')));
-app.use(session({
-    secret: '656578fthbiut764435s',
-    resave: true,
-    saveUninitialized: true
-}));
-app.set("view engine", "jade")
-session.loggedin = false;
+// app.set("view engine", "jade")
 
 app.get('/', (req, res) => {
-    res.render(path.join(__dirname, 'frontend/index'), {});
-});
-app.get('/login', (req, res) => {
-    res.render(path.join(__dirname, 'frontend/login'), {});
-});
-
-//LOGIN
-app.post("/login", (req, res) => {
-    const userData = req.body;
-    email = userData.email;
-    if (userData.email && userData.password) {
-        req.session.loggedin, req.session.username, errorLogin = funciones.login(req, res, userData.email, userData.password);
-    } else {
-
-    }
+    res.render(path.join(__dirname, 'frontend/index.html'), {});
 });
 
 app.listen(PORT, () => {

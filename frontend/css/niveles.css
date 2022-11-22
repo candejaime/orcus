@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292D4F;
+    background-image: url(./1.jpg);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.absolute {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.575);
+}
+
+.ico {
+    position: absolute;
+    width: 3.3%;
+    height: 7%;
+    left: 2%;
+    top: 2%;
+    z-index: 100;
+}
+
+.log {
+    position: absolute;
+    width: 13%;
+    height: 4%;
+    left: 85%;
+    top: 2.5%;
+    z-index: 100;
+}
+
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0%;
+    top: 10%;
+}
+
+.uno {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 174px;
+    top: 200px;
+}
+
+.unot {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 174px;
+    top: 200px;
+}
+
+.dos {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 324px;
+    top: 200px;
+}
+
+.dost {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 324px;
+    top: 200px;
+}
+
+.dosl {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 324px;
+    top: 200px;
+}
+
+.tres {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 474px;
+    top: 200px;
+}
+
+.trest {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 474px;
+    top: 200px;
+}
+
+.tresl {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 474px;
+    top: 200px;
+}
+
+.cuatro {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 624px;
+    top: 200px;
+}
+
+.cuatrot {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 624px;
+    top: 200px;
+}
+
+.cuatrol {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 624px;
+    top: 200px;
+}
+
+.cinco {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 774px;
+    top: 200px;
+}
+
+.seis {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 924px;
+    top: 200px;
+}
+
+.siete {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 1074px;
+    top: 200px;
+}
+
+.ocho {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 174px;
+    top: 367px;
+}
+
+.nueve {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 324px;
+    top: 367px;
+}
+
+.diez {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 474px;
+    top: 367px;
+}
+
+.once {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 624px;
+    top: 367px;
+}
+
+.doce {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 774px;
+    top: 367px;
+}
+
+.trece {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 924px;
+    top: 367px;
+}
+
+.catorse {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 1074px;
+    top: 367px;
+}
+
+.quince {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 174px;
+    top: 512px;
+}
+
+.dieciseis {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 324px;
+    top: 512px;
+}
+
+.diesisiete {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 474px;
+    top: 512px;
+}
+
+.dieciocho {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 624px;
+    top: 512px;
+}
+
+.diecinueve {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 774px;
+    top: 512px;
+}
+
+.veinte {
+    position: absolute;
+    width: 82.42px;
+    height: 80px;
+    left: 924px;
+    top: 512px;
+}
+
+.nivel {
+    position: absolute;
+    width: 559px;
+    height: 156px;
+    font-family: 'Rubik Glitch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 161px;
+    color: #FFFFFF;
+    top: 40px;
+    left: 550px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        display: none;
+    }
+}
